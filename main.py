@@ -2,6 +2,11 @@ import discord
 from discord.ext import commands
 import datetime
 
+f = open("secret.txt")
+token = f.read()
+
+print(f.read())
+
 bot = commands.Bot(command_prefix='V', description="Vatsu destroys Tatsu.")
 
 
@@ -71,4 +76,4 @@ def escape_markdown(text):
     return text
 
 
-bot.run('ODk1MDEzMzg4MTc3MDAyNTI2.YVyYLA.jB_jYW-EwEydxxXGmRBSOPy6CNY')
+bot.run(token)
